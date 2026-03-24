@@ -337,6 +337,10 @@ func (r *Request) remoteAddress() Addr {
 	return r.raddr
 }
 
+func (r *Request) RemoteAddress() Addr {
+	return r.raddr
+}
+
 func cloneRequest(req *Request) *Request {
 	newReq := NewRequest(
 		req.Method,
